@@ -10,6 +10,8 @@ setwd("D:/Users/uusitalol/RStudio/2021 AS EwE to Hugin/")
 #doesn't help, apparently dicretizeDF doesn't use this :( 
 #options(scipen = 999)
 
+#this data file is too large for GitHub, and en example version of 200 rows is 
+# provided instead in the repository
 cont <- read.csv("ArchipelagoSeaResultsForHugin.csv")
 
 #remove zero-filled columns:
