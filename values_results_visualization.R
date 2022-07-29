@@ -1,6 +1,6 @@
 ######################################
 # Visualization of expected benefits from the Hugin model
-# LU 24.3.2022
+# LU 2022
 ######################################
 
 library(pheatmap)
@@ -108,6 +108,8 @@ fig5
 ggsave("Figure5.png")
 ggsave("Figure5.tiff")
 
+#Figure 6
+
 Fig6 <- read.csv("Fig6_fishing.csv")
 
 
@@ -115,7 +117,7 @@ p4 <- ggplot(data=Fig6[Fig6$Climate == "RCP4.5",], aes(x=Fishing.scen, y=Value, 
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility")+
-  ylim(-0.8, 1.6) +
+  ylim(-0.8, 1.7) +
   scale_fill_grey() +
   theme_minimal() + 
   theme(legend.position="none",
@@ -127,7 +129,7 @@ p5 <- ggplot(data=Fig6[Fig6$Climate == "RCP8.5",], aes(x=Fishing.scen, y=Value, 
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility") +
-  ylim(-0.8, 1.6) +
+  ylim(-0.8, 1.7) +
   scale_fill_grey() +
   theme_minimal() +
   theme(legend.position="bottom",
@@ -156,7 +158,7 @@ p6 <- ggplot(data=Fig7[Fig7$Climate == "RCP4.5",], aes(x=Nutrient.scen, y=Value,
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility")+
-  ylim(-0.8, 1.6) +
+  ylim(-0.8, 1.7) +
   scale_fill_grey() +
   theme_minimal() + 
   theme(legend.position="none",
@@ -168,7 +170,7 @@ p7 <- ggplot(data=Fig7[Fig7$Climate == "RCP8.5",], aes(x=Nutrient.scen, y=Value,
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility") +
-  ylim(-0.8, 1.6) +
+  ylim(-0.8, 1.7) +
   scale_fill_grey() +
   theme_minimal() +
   theme(legend.position="bottom",
