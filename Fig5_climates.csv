@@ -1,0 +1,13 @@
+Value type,Sh group,Climate,Value
+Recreation,Local,RCP4.5,0.800981
+Recreation,Cabin and sailing,RCP4.5,0.860074
+Recreation,Recreational user or professional,RCP4.5,1.22349
+Livelihood,Local,RCP4.5,0.1766
+Livelihood,Cabin and sailing,RCP4.5,0.120084
+Livelihood,Recreational user or professional,RCP4.5,0.260354
+Recreation,Local,RCP8.5,-0.250191
+Recreation,Cabin and sailing,RCP8.5,-0.379347
+Recreation,Recreational user or professional,RCP8.5,0.052434
+Livelihood,Local,RCP8.5,-0.248112
+Livelihood,Cabin and sailing,RCP8.5,-0.232251
+Livelihood,Recreational user or professional,RCP8.5,-0.0992339
