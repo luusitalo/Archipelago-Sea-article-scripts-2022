@@ -1,0 +1,49 @@
+Value type,Sh group,Climate,Fishing.scen,Value
+Livelihood,Cabin and sailing,RCP4.5,Dec,0.309494
+Livelihood,Cabin and sailing,RCP4.5,Gil,0.260868
+Livelihood,Cabin and sailing,RCP4.5,Inc,0.156871
+Livelihood,Cabin and sailing,RCP4.5,SQ,0.166753
+Livelihood,Cabin and sailing,RCP8.5,Dec,-0.324168
+Livelihood,Cabin and sailing,RCP8.5,Gil,-0.466535
+Livelihood,Cabin and sailing,RCP8.5,Inc,-0.371538
+Livelihood,Cabin and sailing,RCP8.5,SQ,-0.373668
+Livelihood,Local,RCP4.5,Dec,0.421177
+Livelihood,Local,RCP4.5,Gil,0.191951
+Livelihood,Local,RCP4.5,Inc,0.344194
+Livelihood,Local,RCP4.5,SQ,0.169866
+Livelihood,Local,RCP8.5,Dec,-0.321827
+Livelihood,Local,RCP8.5,Gil,-0.54034
+Livelihood,Local,RCP8.5,Inc,-0.389167
+Livelihood,Local,RCP8.5,SQ,-0.399244
+Livelihood,Recreational user or professional,RCP4.5,Dec,0.544879
+Livelihood,Recreational user or professional,RCP4.5,Gil,0.336282
+Livelihood,Recreational user or professional,RCP4.5,Inc,0.47623
+Livelihood,Recreational user or professional,RCP4.5,SQ,0.378756
+Livelihood,Recreational user or professional,RCP8.5,Dec,-0.0890919
+Livelihood,Recreational user or professional,RCP8.5,Gil,-0.298396
+Livelihood,Recreational user or professional,RCP8.5,Inc,-0.157082
+Livelihood,Recreational user or professional,RCP8.5,SQ,-0.16373
+Recreation,Cabin and sailing,RCP4.5,Dec,1.77893
+Recreation,Cabin and sailing,RCP4.5,Gil,0.960209
+Recreation,Cabin and sailing,RCP4.5,Inc,1.51325
+Recreation,Cabin and sailing,RCP4.5,SQ,1.13162
+Recreation,Cabin and sailing,RCP8.5,Dec,-0.312538
+Recreation,Cabin and sailing,RCP8.5,Gil,-1.0978
+Recreation,Cabin and sailing,RCP8.5,Inc,-0.568796
+Recreation,Cabin and sailing,RCP8.5,SQ,-0.591073
+Recreation,Local,RCP4.5,Dec,1.46772
+Recreation,Local,RCP4.5,Gil,0.91123
+Recreation,Local,RCP4.5,Inc,1.28472
+Recreation,Local,RCP4.5,SQ,0.888967
+Recreation,Local,RCP8.5,Dec,-0.363646
+Recreation,Local,RCP8.5,Gil,-0.908261
+Recreation,Local,RCP8.5,Inc,-0.538083
+Recreation,Local,RCP8.5,SQ,-0.557831
+Recreation,Recreational user or professional,RCP4.5,Dec,2.15391
+Recreation,Recreational user or professional,RCP4.5,Gil,1.26548
+Recreation,Recreational user or professional,RCP4.5,Inc,1.86986
+Recreation,Recreational user or professional,RCP4.5,SQ,1.50046
+Recreation,Recreational user or professional,RCP8.5,Dec,0.13817
+Recreation,Recreational user or professional,RCP8.5,Gil,-0.732173
+Recreation,Recreational user or professional,RCP8.5,Inc,-0.160784
+Recreation,Recreational user or professional,RCP8.5,SQ,-0.171086

@@ -10,12 +10,12 @@ library(ggplot2)
 library(ggpubr)
 
 
-setwd("D:/Users/uusitalol/RStudio/2021 AS EwE to Hugin/")
+setwd("D:/Users/uusitalol/manuscripts/_submitted/2022 Uusitalo AS BN/models/")
 
-values <- read.csv("parsed_utilities.csv")
+values <- read.csv("parsed_utilities_fixed.csv")
 
 #create matrix for heatmap
-heatmat <- acast(values,Climate.scenario + Nutrient.scenario +   Fishing.scenario ~ Value.type + Stakeholder.group, value.var="Overall.expected.utility")
+heatmat <- acast(values, Climate.scenario + Nutrient.scenario + Fishing.scenario ~ Value.type + Stakeholder.group, value.var="Overall.expected.utility")
 
 #drawing heatmaps
 
@@ -55,16 +55,16 @@ pheatmap(heatmat, cluster_rows=FALSE, cluster_cols=FALSE, display_numbers=TRUE,
 )
 
 #Figure 5
-Fig51 <- read.csv("Fig5_climates.csv")
-Fig52 <- read.csv("Fig5_nutrients.csv")
-Fig53 <- read.csv("Fig5_fishing.csv")
+Fig51 <- read.csv("Fig5_climates_fixed.csv")
+Fig52 <- read.csv("Fig5_nutrients_fixed.csv")
+Fig53 <- read.csv("Fig5_fishing_fixed.csv")
 Fig53$Fishing.scen <- factor(Fig53$Fishing.scen,levels = c("Dec", "Gil", "SQ", "Inc"))
 
 p1 <- ggplot(data=Fig51, aes(x=Climate, y=Value, fill=Sh.group)) +
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Climate scenario", y = "Utility") +
-  ylim(-0.4, 1.6) +
+  ylim(-1, 2) +
   scale_fill_grey() +
   theme_minimal() +
   theme(legend.position="none",
@@ -76,24 +76,24 @@ p2 <- ggplot(data=Fig52, aes(x=Nutrients, y=Value, fill=Sh.group)) +
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Nutrient scenario", y = "Utility")+
-  ylim(-0.4, 1.6) +
+  ylim(-1, 2) +
   scale_fill_grey() +
   theme_minimal() + 
   theme(legend.position="none",
         legend.title = element_blank(),
-        strip.text.x = element_blank()) + 
+        strip.text.x=element_text(margin=margin(t=20))) + 
   xlab(element_blank()) 
 
 p3 <- ggplot(data=Fig53, aes(x=Fishing.scen, y=Value, fill=Sh.group)) +
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility") +
-  ylim(-0.4, 1.6) +
+  ylim(-1, 2) +
   scale_fill_grey() +
   theme_minimal() +
   theme(legend.position="bottom",
         legend.title = element_blank(),
-        strip.text.x = element_blank()) + 
+        strip.text.x=element_text(margin=margin(t=20))) + 
   xlab(element_blank()) 
 
 
@@ -110,14 +110,16 @@ ggsave("Figure5.tiff")
 
 #Figure 6
 
-Fig6 <- read.csv("Fig6_fishing.csv")
+Fig6 <- read.csv("Fig6_fishing_fixed.csv")
+Fig6$Fishing.scen <- factor(Fig6$Fishing.scen,levels = c("Dec", "Gil", "SQ", "Inc"))
+
 
 
 p4 <- ggplot(data=Fig6[Fig6$Climate == "RCP4.5",], aes(x=Fishing.scen, y=Value, fill=Sh.group)) +
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility")+
-  ylim(-0.8, 1.7) +
+  ylim(-1.1, 2.2) +
   scale_fill_grey() +
   theme_minimal() + 
   theme(legend.position="none",
@@ -129,12 +131,12 @@ p5 <- ggplot(data=Fig6[Fig6$Climate == "RCP8.5",], aes(x=Fishing.scen, y=Value, 
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility") +
-  ylim(-0.8, 1.7) +
+  ylim(-1.1, 2.2) +
   scale_fill_grey() +
   theme_minimal() +
   theme(legend.position="bottom",
         legend.title = element_blank(),
-        strip.text.x = element_blank()) + 
+        strip.text.x=element_text(margin=margin(t=20))) + 
   xlab(element_blank()) 
 
 
@@ -152,13 +154,13 @@ ggsave("Figure6.tiff")
 
 
 
-Fig7 <- read.csv("Fig7_nutrients.csv")
+Fig7 <- read.csv("Fig7_nutrients_fixed.csv")
 
 p6 <- ggplot(data=Fig7[Fig7$Climate == "RCP4.5",], aes(x=Nutrient.scen, y=Value, fill=Sh.group)) +
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility")+
-  ylim(-0.8, 1.7) +
+  ylim(-1.1, 2.2) +
   scale_fill_grey() +
   theme_minimal() + 
   theme(legend.position="none",
@@ -170,12 +172,12 @@ p7 <- ggplot(data=Fig7[Fig7$Climate == "RCP8.5",], aes(x=Nutrient.scen, y=Value,
   facet_wrap(~ Value.type) + 
   geom_col(position=position_dodge2()) + 
   labs(x="Fishing scenario", y = "Utility") +
-  ylim(-0.8, 1.7) +
+  ylim(-1.1, 2.2) +
   scale_fill_grey() +
   theme_minimal() +
   theme(legend.position="bottom",
         legend.title = element_blank(),
-        strip.text.x = element_blank()) + 
+        strip.text.x=element_text(margin=margin(t=20))) + 
   xlab(element_blank()) 
 
 

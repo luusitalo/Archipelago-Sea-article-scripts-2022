@@ -1,0 +1,25 @@
+Value type,Sh group,Climate,Nutrient.scen,Value
+Livelihood,Cabin and sailing,RCP4.5,BSAP,0.286368
+Livelihood,Cabin and sailing,RCP4.5,PLC55,0.160625
+Livelihood,Cabin and sailing,RCP8.5,BSAP,-0.28834
+Livelihood,Cabin and sailing,RCP8.5,PLC55,-0.479615
+Livelihood,Local,RCP4.5,BSAP,0.367053
+Livelihood,Local,RCP4.5,PLC55,0.196541
+Livelihood,Local,RCP8.5,BSAP,-0.307854
+Livelihood,Local,RCP8.5,PLC55,-0.517435
+Livelihood,Recreational user or professional,RCP4.5,BSAP,0.489222
+Livelihood,Recreational user or professional,RCP4.5,PLC55,0.378852
+Livelihood,Recreational user or professional,RCP8.5,BSAP,-0.0883211
+Livelihood,Recreational user or professional,RCP8.5,PLC55,-0.265829
+Recreation,Cabin and sailing,RCP4.5,BSAP,1.59752
+Recreation,Cabin and sailing,RCP4.5,PLC55,1.09448
+Recreation,Cabin and sailing,RCP8.5,BSAP,-0.345353
+Recreation,Cabin and sailing,RCP8.5,PLC55,-0.939751
+Recreation,Local,RCP4.5,BSAP,1.34903
+Recreation,Local,RCP4.5,PLC55,0.927285
+Recreation,Local,RCP8.5,BSAP,-0.323415
+Recreation,Local,RCP8.5,PLC55,-0.860496
+Recreation,Recreational user or professional,RCP4.5,BSAP,1.9416
+Recreation,Recreational user or professional,RCP4.5,PLC55,1.45325
+Recreation,Recreational user or professional,RCP8.5,BSAP,0.0540797
+Recreation,Recreational user or professional,RCP8.5,PLC55,-0.517016
